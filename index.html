@@ -12,20 +12,70 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
       integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"/>
-    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://kit.fontawesome.com/yourcode.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+      integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/chatbot.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
   </head>
   <body>
-    <!-- Scroll up button -->
+    <!-- Scroll up button-->
+
     <div class="scroll-up-btn">
       <i class="fas fa-angle-up"></i>
     </div>
-    
+    <!-- Chat-Bot -->
+    <button class="chatbot-toggler">
+      <span class="material-symbols-outlined">mode_comment</span>
+      <span class="material-symbols-outlined">close</span>
+    </button>
+    <div class="chatbot">
+      <header>
+          <h2>Chatbot</h2>
+          <span class="close-btn material-symbols-outlined">close</span>
+      </header>
+      <ul class="chatbox">
+          <li class="chat incoming">
+              <span class="material-symbols-outlined">smart_toy</span>
+              <p>Hello👋<br>How can I help you today?</p>
+          </li>
+      </ul>
+      <div class="chat-input">
+          <textarea placeholder="Enter your message..." required></textarea>
+          <span id="send-btn" class="material-symbols-outlined">Send</span>
+      </div>
+    </div>
+
     <!-- Navbar  -->
 
     <nav class="navbar">
@@ -56,14 +106,19 @@
         <div class="home-content">
           <div class="text-1">Hello, my name is</div>
           <div class="text-2">Enes Aydogdu</div>
-          <div class="text-3">And I'm a 
-            <span class="typewrite" data-period="1000" data-type='["Front End Developer","Designer","Freelancer"]'></span>
+          <div class="text-3">
+            And I'm a
+            <span
+              class="typewrite"
+              data-period="1000"
+              data-type='["Front End Developer","Designer","Freelancer"]'
+            ></span>
           </div>
           <a href="#contact">Hire me</a>
         </div>
       </div>
     </section>
-    
+
     <!-- about section start -->
 
     <section class="about" id="about">
@@ -75,7 +130,12 @@
           </div>
           <div class="column right">
             <div class="text">
-              I'm Enes and I'm a <span class="typewrite" data-period="1000" data-type='["Front End Developer"]'></span>
+              I'm Enes and I'm a
+              <span
+                class="typewrite"
+                data-period="1000"
+                data-type='["Front End Developer"]'
+              ></span>
             </div>
             <p>
               Hello! My name is Enes, and I am a junior web developer. I am
@@ -115,38 +175,48 @@
       <div class="max-width">
         <h2 class="title">My Working Process</h2>
         <div class="serv-content">
-
-            <div class="card">
-              <div class="box">
-                <i class="fa-solid fa-sitemap"></i>
-                <div class="text"> Gather <br>Information</div>
-                <p>I conduct extensive research and gather data to ensure accurate insights for informed decision-making.</p>
-              </div>
+          <div class="card">
+            <div class="box">
+              <i class="fa-solid fa-sitemap"></i>
+              <div class="text">Gather <br />Information</div>
+              <p>
+                I conduct extensive research and gather data to ensure accurate
+                insights for informed decision-making.
+              </p>
             </div>
+          </div>
 
-            <div class="card">
-              <div class="box">
-                <i class="fa-solid fa-clipboard-check"></i>
-                <div class="text">Planning.</div>
-                <p>I'm here to plan and organize your projects, I can assist you.</p>
-              </div>
+          <div class="card">
+            <div class="box">
+              <i class="fa-solid fa-clipboard-check"></i>
+              <div class="text">Planning.</div>
+              <p>
+                I'm here to plan and organize your projects, I can assist you.
+              </p>
             </div>
+          </div>
 
-            <div class="card">
-              <div class="box">
-                <i class="fas fa-paint-brush"></i>
-                <div class="text">Web Design</div>
-                <p>I offer services in web design, creating modern and impressive websites.</p>
-              </div>
+          <div class="card">
+            <div class="box">
+              <i class="fas fa-paint-brush"></i>
+              <div class="text">Web Design</div>
+              <p>
+                I offer services in web design, creating modern and impressive
+                websites.
+              </p>
             </div>
+          </div>
 
-            <div class="card">
-              <div class="box">
-                <i class="fa-solid fa-code"></i>
-                <div class="text">Development,<br>Testing</div>
-                <p>I develop and thoroughly test your products, delivering them to you without any errors.</p>
-              </div>
+          <div class="card">
+            <div class="box">
+              <i class="fa-solid fa-code"></i>
+              <div class="text">Development,<br />Testing</div>
+              <p>
+                I develop and thoroughly test your products, delivering them to
+                you without any errors.
+              </p>
             </div>
+          </div>
         </div>
       </div>
     </section>
@@ -155,14 +225,22 @@
 
     <section class="skills" id="skills">
       <div class="max-width">
-        <h2 class="title">My Skills </h2>
+        <h2 class="title">My Skills</h2>
         <div class="skills-content">
           <div class="column left">
-              <div class="text">My creative skills & expriences.</div>
-              <p>My creative skills and experiences are strong in front-end development. I create user-friendly and impressive web interfaces using technologies like HTML, CSS, and JavaScript. With a meticulous approach, I strive to enhance the user experience and stay updated with modern design trends. I have expertise in developing responsive and mobile-friendly websites by focusing on user needs. In addition to user-friendly interfaces, I ensure optimized coding and browser compatibility.</p>
+            <div class="text">My creative skills & expriences.</div>
+            <p>
+              My creative skills and experiences are strong in front-end
+              development. I create user-friendly and impressive web interfaces
+              using technologies like HTML, CSS, and JavaScript. With a
+              meticulous approach, I strive to enhance the user experience and
+              stay updated with modern design trends. I have expertise in
+              developing responsive and mobile-friendly websites by focusing on
+              user needs. In addition to user-friendly interfaces, I ensure
+              optimized coding and browser compatibility.
+            </p>
           </div>
           <div class="column right">
-
             <div class="bars">
               <div class="info">
                 <span>HTML</span>
@@ -202,7 +280,6 @@
               </div>
               <div class="line design"></div>
             </div>
-
           </div>
         </div>
       </div>
@@ -213,11 +290,13 @@
       <div class="max-width">
         <h2 class="title">My Projects</h2>
         <div class="carousel owl-carousel">
-          
           <div class="card">
             <div class="box">
-              <a href="https://ayd0gdu.github.io/movies-website/" target="_blank">
-                <img src="assets/work-1.jpg">
+              <a
+                href="https://ayd0gdu.github.io/movies-website/"
+                target="_blank"
+              >
+                <img src="assets/work-1.jpg" />
                 <div class="text">Movies Web Site</div>
               </a>
             </div>
@@ -226,7 +305,7 @@
           <div class="card">
             <div class="box">
               <a href="https://ayd0gdu.github.io/foods_foods/" target="_blank">
-                <img src="assets/work-2.jpg">
+                <img src="assets/work-2.jpg" />
                 <div class="text">Foods&Foods</div>
               </a>
             </div>
@@ -234,8 +313,11 @@
 
           <div class="card">
             <div class="box">
-              <a href="https://ayd0gdu.github.io/shoes-website/" target="_blank">
-                <img src="assets/work-3.jpg">
+              <a
+                href="https://ayd0gdu.github.io/shoes-website/"
+                target="_blank"
+              >
+                <img src="assets/work-3.jpg" />
                 <div class="text">Shoes Web Site</div>
               </a>
             </div>
@@ -243,8 +325,11 @@
 
           <div class="card">
             <div class="box">
-              <a href="https://ayd0gdu.github.io/pizza-shop-website/" target="_blank">
-                <img src="assets/work-4.jpg">
+              <a
+                href="https://ayd0gdu.github.io/pizza-shop-website/"
+                target="_blank"
+              >
+                <img src="assets/work-4.jpg" />
                 <div class="text">I like Pizza</div>
               </a>
             </div>
@@ -252,15 +337,15 @@
 
           <div class="card">
             <div class="box">
-              <a href="https://ayd0gdu.github.io/react-portfolio/" target="_blank">
-                <img src="assets/work-5.jpg">
+              <a
+                href="https://ayd0gdu.github.io/react-portfolio/"
+                target="_blank"
+              >
+                <img src="assets/work-5.jpg" />
                 <div class="text">Portfolio</div>
               </a>
             </div>
           </div>
-
-          
-
         </div>
       </div>
     </section>
@@ -274,7 +359,6 @@
             <div class="text">Get in Touch</div>
             <p>You can contact me to assist you.</p>
             <div class="icons">
-
               <div class="row">
                 <i class="fas fa-user"></i>
                 <div class="info">
@@ -298,36 +382,46 @@
                   <div class="sub-title">enes.aydogdu@yahoo.com</div>
                 </div>
               </div>
-
             </div>
           </div>
           <div class="column right">
             <div class="text">Message me</div>
             <form action="https://formspree.io/f/mknadqdn" method="POST">
               <div class="fields">
-
                 <div class="field name">
-                  <input type="text" name="name" placeholder="Name" required>
+                  <input type="text" name="name" placeholder="Name" required />
                 </div>
 
                 <div class="field email">
-                  <input type="email" name="email" placeholder="Email" required>
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Email"
+                    required
+                  />
                 </div>
               </div>
 
-                <div class="field">
-                  <input type="text" name="subject" placeholder="Subject" required>
-                </div>
+              <div class="field">
+                <input
+                  type="text"
+                  name="subject"
+                  placeholder="Subject"
+                  required
+                />
+              </div>
 
-                <div class="field textarea">
-                  <textarea placeholder="Message..." name="message" required></textarea>
-                </div>
+              <div class="field textarea">
+                <textarea
+                  placeholder="Message..."
+                  name="message"
+                  required
+                ></textarea>
+              </div>
 
-                <div class="button">
-                  <button type="submit">Send message</button>
-                </div>
-
-
+              <div class="button">
+                <button type="submit">Send message</button>
+              </div>
             </form>
           </div>
         </div>
@@ -336,16 +430,33 @@
 
     <!-- footer section start -->
     <footer>
-      <span>Created By <a href="https://twitter.com/_aydogduenes" target="_blank">Enes Aydogdu</a> | <span class="far fa-copyright"></span>2023 All rights reserved.</span>
+      <span
+        >Created By
+        <a href="https://twitter.com/_aydogduenes" target="_blank"
+          >Enes Aydogdu</a
+        >
+        | <span class="far fa-copyright"></span>2023 All rights reserved.</span
+      >
       <div class="social-icons">
-        <a href="https://twitter.com/_aydogduenes" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-        <a href="https://instagram.com/ayd0gdu_" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://www.linkedin.com/in/enes-aydo%C4%9Fdu-aa32091ba/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="https://github.com/ayd0gdu" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://twitter.com/_aydogduenes" target="_blank"
+          ><i class="fa-brands fa-twitter"></i
+        ></a>
+        <a href="https://instagram.com/ayd0gdu_" target="_blank"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/enes-aydo%C4%9Fdu-aa32091ba/"
+          target="_blank"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a href="https://github.com/ayd0gdu" target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
       </div>
     </footer>
 
     <script src="./js/script.js"></script>
     <script src="./js/type-writer.js"></script>
+    <script src="./js/chatbot.js"></script>
   </body>
 </html>
