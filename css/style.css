@@ -11,6 +11,20 @@ html{
     scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #111;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: crimson;
+    border-radius: 6px;
+  }
+
 .max-width{
     max-width: 1300px;
     padding: 0 80px;
