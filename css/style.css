@@ -410,7 +410,7 @@ section .title::after{
 .projects .carousel .card{
     background: #222;
     border-radius: 6px;
-    padding: 25px 35px;
+    padding: 35px 45px;
     text-align: center;
     transition: all 0.3s ease;
 }
@@ -444,9 +444,9 @@ section .title::after{
 
 .projects .carousel .card img{
     height: 200px;
-    width: 200px;
+    width: 340px;
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: 6px;
     border: 5px solid crimson;
     transition: all 0.3s ease;
 }
